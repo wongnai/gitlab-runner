@@ -1,3 +1,3 @@
 3c0a1a03653dff205f27bb178773f3c294319435a2589cf3cb4456423f8cef08  /usr/bin/docker-machine
-a8defac40aaca2ca0896c7c5adbc241af60c7c3df470c1a4c469a860bd805429  /usr/bin/dumb-init
-ae8b7d5db8ba1fcb7969d2cacbadcba7142fbbc275b191c21df621eead577d17  /usr/bin/gitlab-ci-multi-runner
+650c4e5095d7891a9b2739b23b753ded3115af1926ecbef8e5af7356222d8863  /usr/bin/dumb-init
+0951d056458fc1a1453a63edc3ec081479aeb886e0ae4f2f922d557ef1cd2d57  /usr/bin/gitlab-ci

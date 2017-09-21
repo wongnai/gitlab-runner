@@ -10,16 +10,15 @@ RUN apk add --update \
     wget
 
 COPY checksums.sha256 /tmp/
-RUN wget -q https://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/v1.11.2/binaries/gitlab-ci-multi-runner-linux-amd64 -O /usr/bin/gitlab-ci-multi-runner && \
-	chmod +x /usr/bin/gitlab-ci-multi-runner && \
-    ln -s /usr/bin/gitlab-ci-multi-runner /usr/bin/gitlab-runner && \
+RUN wget -q https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64 -O /usr/bin/gitlab-runner && \
+	chmod +x /usr/bin/gitlab-runner && \
     gitlab-runner --version && \
     mkdir -p /etc/gitlab-runner/certs && \
     chmod -R 700 /etc/gitlab-runner && \
     wget -q https://github.com/docker/machine/releases/download/v0.12.2/docker-machine-Linux-x86_64 -O /usr/bin/docker-machine && \
     chmod +x /usr/bin/docker-machine && \
     docker-machine --version && \
-    wget -q https://github.com/Yelp/dumb-init/releases/download/v1.0.2/dumb-init_1.0.2_amd64 -O /usr/bin/dumb-init && \
+    wget -q https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 -O /usr/bin/dumb-init && \
     chmod +x /usr/bin/dumb-init && \
     dumb-init --version && \
     sha256sum -c -w /tmp/checksums.sha256
