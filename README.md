@@ -1,5 +1,7 @@
 # GitLab Runner
 
+**Deprecated**: Use [registry.gitlab.com/gitlab-org/gitlab-runner:alpine](https://gitlab.com/gitlab-org/gitlab-runner/container_registry) instead
+
 This is [gitlab-runner:alpine](https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/tree/master/dockerfiles/alpine) updated to the latest version, as the official image on Docker Hub is not updated yet.
 
 ## Version
